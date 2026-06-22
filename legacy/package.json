@@ -1,0 +1,26 @@
+{
+  "name": "axios-fixture-legacy",
+  "version": "1.0.0",
+  "description": "Scanner fixture: axios 0.x legacy vulnerabilities",
+  "dependencies": {
+    "axios": "0.21.0"
+  },
+  "scanner_targets": {
+    "CVE-2020-28168": {
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "type": "SSRF",
+      "summary": "Proxy bypass via redirect to restricted host/IP",
+      "affected": "axios < 0.21.1",
+      "fixed_in": "0.21.1"
+    },
+    "CVE-2021-3749": {
+      "severity": "HIGH",
+      "cvss": 7.8,
+      "type": "ReDoS",
+      "summary": "Inefficient Regular Expression Complexity",
+      "affected": "axios < 0.21.2",
+      "fixed_in": "0.21.2"
+    }
+  }
+}

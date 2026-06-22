@@ -1,0 +1,32 @@
+{
+  "name": "axios-fixture-latest-unsafe",
+  "version": "1.0.0",
+  "description": "Scanner fixture: prototype pollution + NO_PROXY bypass + metadata exfiltration",
+  "dependencies": {
+    "axios": "1.14.0"
+  },
+  "scanner_targets": {
+    "CVE-2026-25639": {
+      "severity": "HIGH",
+      "type": "Prototype Pollution / MitM",
+      "summary": "Prototype pollution gadget in mergeConfig — Object.prototype pollution in any dep escalates to full MitM on all HTTP traffic",
+      "affected": "axios < 1.15.0",
+      "fixed_in": "1.15.0"
+    },
+    "CVE-2025-62718": {
+      "severity": "MODERATE",
+      "type": "SSRF",
+      "summary": "NO_PROXY hostname bypass via trailing dot or IPv6 bracket notation — request routes through proxy to internal host",
+      "affected": "axios < 1.15.0",
+      "fixed_in": "1.15.0"
+    },
+    "CVE-2026-40175": {
+      "severity": "MODERATE",
+      "type": "Cloud Metadata Exfiltration",
+      "summary": "Cloud metadata endpoint accessible due to NO_PROXY bypass not normalising IPv4-mapped IPv6 addresses",
+      "affected": "axios < 1.15.0",
+      "fixed_in": "1.15.0"
+    }
+  },
+  "warning": "DO NOT use axios 1.14.1 or 0.30.4 — those versions were supply-chain compromised on March 31 2026 and injected malicious payloads. Use 1.14.0 as the safe-but-still-CVE-affected pin."
+}
