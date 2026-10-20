@@ -1,6 +1,4 @@
 
-  # .github/workflows/az-security-scan.yml
-
   name: AZ-Security-Scan
   
   on:
@@ -15,7 +13,7 @@
       
       env:
         AZ_API_KEY: "${{ secrets.AZ_TOKEN }}"
-        PROJECT_KEY: "ifpspYzBNWCepHvIosky"
+        PROJECT_KEY: "HHUyQDrjPthzZGIYjxVEGTNLBNWYBrMM"
         BRANCH_NAME: "${{ github.ref_name }}"
         DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
         DOCKER_TOKEN: "${{ secrets.DOCKER_TOKEN }}"
