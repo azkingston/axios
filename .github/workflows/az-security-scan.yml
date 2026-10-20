@@ -15,7 +15,7 @@
       
       env:
         AZ_API_KEY: "${{ secrets.AZ_TOKEN }}"
-        PROJECT_KEY: "HHUyQDrjPthzZGIYjxVEGTNLBNWYBrMM"
+        PROJECT_KEY: "ifpspYzBNWCepHvIosky"
         BRANCH_NAME: "${{ github.ref_name }}"
         DOCKER_USERNAME: "${{ secrets.DOCKER_USERNAME }}"
         DOCKER_TOKEN: "${{ secrets.DOCKER_TOKEN }}"
