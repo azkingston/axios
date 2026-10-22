@@ -1,0 +1,73 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "php2shell-patched-control"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:generic/php@8.2.35?package-id=315e7e9f73f477da",
+      "type": "application",
+      "name": "libphp",
+      "version": "8.2.35",
+      "cpe": "cpe:2.3:a:php:php:8.2.35:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/php@8.2.35",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "php-interpreter-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "binary"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "binary-signature"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:e900dc4080c33e3ce882c4d4967059e1cdf02fa3933e3f63896e13efca39249d"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/lib/apache2/modules/libphp.so"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:generic/php-cli@8.2.35?package-id=3d7c20d3e72954c8",
+      "type": "application",
+      "name": "php-cli",
+      "version": "8.2.35",
+      "cpe": "cpe:2.3:a:php:php:8.2.35:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/php-cli@8.2.35",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "php-interpreter-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "binary"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "binary-signature"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:e900dc4080c33e3ce882c4d4967059e1cdf02fa3933e3f63896e13efca39249d"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/local/bin/php"
+        }
+      ]
+    }
+  ]
+}
